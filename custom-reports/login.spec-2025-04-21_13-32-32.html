@@ -1,0 +1,201 @@
+
+      <!DOCTYPE html>
+      <html>
+      <head>
+        <meta charset="UTF-8" />
+        <title>Playwright Test Report</title>
+        <style>
+          body {
+            font-family: 'Segoe UI', sans-serif;
+            background: #f8f9fa;
+            padding: 20px;
+            color: #333;
+          }
+          h1 {
+            color: #222;
+          }
+          .summary {
+            display: flex;
+            gap: 20px;
+            background: #fff;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+          }
+          .summary span {
+            font-weight: bold;
+            padding: 8px 14px;
+            border-radius: 5px;
+            font-size: 14px;
+          }
+          .total { background: #e0e0e0; }
+          .passed { background: #d4edda; color: #155724; }
+          .failed { background: #f8d7da; color: #721c24; }
+          .duration { background: #fff3cd; color: #856404; }
+
+          .section-title {
+            font-size: 18px;
+            margin-top: 30px;
+            margin-bottom: 10px;
+            color: #444;
+            border-bottom: 2px solid #ccc;
+            padding-bottom: 5px;
+          }
+          .log-content {
+            background: #f5f5f5;
+            border: 1px solid #ccc;
+            padding: 10px;
+            white-space: pre-wrap;
+            font-family: monospace;
+            max-height: 500px;
+            overflow-y: auto;
+          }
+
+          table {
+            border-collapse: collapse;
+            width: 100%;
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+          }
+          th, td {
+            padding: 10px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+          }
+          .tag {
+            background: #e0e0e0;
+            padding: 2px 8px;
+            border-radius: 5px;
+            font-size: 12px;
+          }
+          .badge {
+            font-size: 12px;
+            padding: 5px 10px;
+            border-radius: 20px;
+          }
+          .passed { background: #28a745; color: white; }
+          .failed { background: #dc3545; color: white; }
+          .duration { background: #ffc107; }
+        </style>
+      </head>
+      <body>
+        <h1>Playwright Test Report</h1>
+        <div class="summary">
+          <span class="total">Total: 3</span>
+          <span class="passed">Passed: 2</span>
+          <span class="failed">Failed: 1</span>
+          <span class="duration">Total Duration: 10342ms</span>
+        </div>
+        
+        <div class="section-title">Passed Tests</div>
+        <table>
+          <thead>
+            <tr>
+              <th>Title</th>
+              <th>File</th>
+              <th>Status</th>
+              <th>Duration</th>
+              <th>Screenshots</th>
+              <th>Videos</th>
+            </tr>
+          </thead>
+          <tbody>
+            
+          <tr class="passed">
+            <td>
+              
+                Login with invalid credentials @smoke @negative <span class="tag">@smoke</span> <span class="tag">@negative</span>
+              
+            </td>
+            <td>C:\Users\Srinivas Reddy\playwright-tests\tests\login.spec.js</td>
+            <td><span class="badge passed">PASSED</span></td>
+            <td>949ms</td>
+            <td>—</td>
+            <td>—</td>
+          </tr>
+        
+          <tr class="passed">
+            <td>
+              
+                Logout from the application @smoke <span class="tag">@smoke</span>
+              
+            </td>
+            <td>C:\Users\Srinivas Reddy\playwright-tests\tests\login.spec.js</td>
+            <td><span class="badge passed">PASSED</span></td>
+            <td>1878ms</td>
+            <td>—</td>
+            <td>—</td>
+          </tr>
+        
+          </tbody>
+        </table>
+
+        <div class="section-title">Failed Tests</div>
+        <table>
+          <thead>
+            <tr>
+              <th>Title</th>
+              <th>File</th>
+              <th>Status</th>
+              <th>Duration</th>
+              <th>Screenshots</th>
+              <th>Videos</th>
+            </tr>
+          </thead>
+          <tbody>
+            
+          <tr class="failed">
+            <td>
+              
+                <details>
+                  <summary>Login with valid credentials @smoke <span class="tag">@smoke</span></summary>
+                  <pre class="error">Error: [31mTimed out 5000ms waiting for [39m[2mexpect([22m[31mlocator[39m[2m).[22mtoHaveURL[2m([22m[32mexpected[39m[2m)[22m
+
+Locator: locator(':root')
+Expected pattern: [32m/inventory\.html/[39m
+Received string:  [31m"https://www.saucedemo.com/"[39m
+Call log:
+[2m  - expect.toHaveURL with timeout 5000ms[22m
+[2m  - waiting for locator(':root')[22m
+[2m    9 × locator resolved to <html lang="en">…</html>[22m
+[2m      - unexpected value "https://www.saucedemo.com/"[22m
+</pre>
+                </details>
+              
+            </td>
+            <td>C:\Users\Srinivas Reddy\playwright-tests\tests\login.spec.js</td>
+            <td><span class="badge failed">FAILED</span></td>
+            <td>7515ms</td>
+            <td><a href="file://C:\Users\Srinivas Reddy\playwright-tests\test-results\tests-login-Swag-Labs-Logi-056b3-ith-valid-credentials-smoke\test-failed-1.png" target="_blank"><img src="file://C:\Users\Srinivas Reddy\playwright-tests\test-results\tests-login-Swag-Labs-Logi-056b3-ith-valid-credentials-smoke\test-failed-1.png" /></a></td>
+            <td><video controls><source src="file://C:\Users\Srinivas Reddy\playwright-tests\test-results\tests-login-Swag-Labs-Logi-056b3-ith-valid-credentials-smoke\video.webm" type="video/webm"></video></td>
+          </tr>
+        
+          </tbody>
+        </table>
+
+        <div class="section-title">Logs</div>
+        <div class="log-content">[2025-04-21T13:32:29.974Z] [INFO] [--- Test Started ---] Login with invalid credentials @smoke @negative
+[2025-04-21T13:32:29.975Z] [INFO] [Navigating to login page...] Login with invalid credentials @smoke @negative
+[2025-04-21T13:32:30.514Z] [INFO] [Filling in username: "invalid_user"] Login with invalid credentials @smoke @negative
+[2025-04-21T13:32:30.562Z] [INFO] [Filling in password] Login with invalid credentials @smoke @negative
+[2025-04-21T13:32:30.588Z] [INFO] [Clicking login button] Login with invalid credentials @smoke @negative
+[2025-04-21T13:32:30.671Z] [INFO] [Checking if error message is visible] Login with invalid credentials @smoke @negative
+[2025-04-21T13:32:30.689Z] [INFO] [Asserting error message text is: "Epic sadface: Username and password do not match any user in this service"] Login with invalid credentials @smoke @negative
+[2025-04-21T13:32:30.700Z] [INFO] [Login with invalid credentials @smoke @negative] ✅ Test passed successfully.
+[2025-04-21T13:32:30.701Z] [INFO] [Login with invalid credentials @smoke @negative] --- Test Ended ---
+[2025-04-21T13:32:30.961Z] [INFO] [--- Test Started ---] Logout from the application @smoke
+[2025-04-21T13:32:30.962Z] [INFO] [Navigating to login page...] Logout from the application @smoke
+[2025-04-21T13:32:31.436Z] [INFO] [Filling in username: "standard_user"] Logout from the application @smoke
+[2025-04-21T13:32:31.505Z] [INFO] [Filling in password] Logout from the application @smoke
+[2025-04-21T13:32:31.533Z] [INFO] [Clicking login button] Logout from the application @smoke
+[2025-04-21T13:32:31.650Z] [INFO] [Logging out of the application] Logout from the application @smoke
+[2025-04-21T13:32:32.619Z] [INFO] [Asserting login button is visible on the page] Logout from the application @smoke
+[2025-04-21T13:32:32.625Z] [INFO] [Logout from the application @smoke] ✅ Test passed successfully.
+[2025-04-21T13:32:32.626Z] [INFO] [Logout from the application @smoke] --- Test Ended ---
+</div>
+      </body>
+      </html>
+    

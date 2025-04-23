@@ -1,0 +1,18 @@
+[2025-04-21T13:32:29.974Z] [INFO] [--- Test Started ---] Login with invalid credentials @smoke @negative
+[2025-04-21T13:32:29.975Z] [INFO] [Navigating to login page...] Login with invalid credentials @smoke @negative
+[2025-04-21T13:32:30.514Z] [INFO] [Filling in username: "invalid_user"] Login with invalid credentials @smoke @negative
+[2025-04-21T13:32:30.562Z] [INFO] [Filling in password] Login with invalid credentials @smoke @negative
+[2025-04-21T13:32:30.588Z] [INFO] [Clicking login button] Login with invalid credentials @smoke @negative
+[2025-04-21T13:32:30.671Z] [INFO] [Checking if error message is visible] Login with invalid credentials @smoke @negative
+[2025-04-21T13:32:30.689Z] [INFO] [Asserting error message text is: "Epic sadface: Username and password do not match any user in this service"] Login with invalid credentials @smoke @negative
+[2025-04-21T13:32:30.700Z] [INFO] [Login with invalid credentials @smoke @negative] ✅ Test passed successfully.
+[2025-04-21T13:32:30.701Z] [INFO] [Login with invalid credentials @smoke @negative] --- Test Ended ---
+[2025-04-21T13:32:30.961Z] [INFO] [--- Test Started ---] Logout from the application @smoke
+[2025-04-21T13:32:30.962Z] [INFO] [Navigating to login page...] Logout from the application @smoke
+[2025-04-21T13:32:31.436Z] [INFO] [Filling in username: "standard_user"] Logout from the application @smoke
+[2025-04-21T13:32:31.505Z] [INFO] [Filling in password] Logout from the application @smoke
+[2025-04-21T13:32:31.533Z] [INFO] [Clicking login button] Logout from the application @smoke
+[2025-04-21T13:32:31.650Z] [INFO] [Logging out of the application] Logout from the application @smoke
+[2025-04-21T13:32:32.619Z] [INFO] [Asserting login button is visible on the page] Logout from the application @smoke
+[2025-04-21T13:32:32.625Z] [INFO] [Logout from the application @smoke] ✅ Test passed successfully.
+[2025-04-21T13:32:32.626Z] [INFO] [Logout from the application @smoke] --- Test Ended ---

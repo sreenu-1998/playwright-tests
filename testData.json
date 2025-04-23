@@ -1,0 +1,53 @@
+{
+    "credentials": {
+        "username": "standard_user",
+        "password": "secret_sauce",
+        "invalid_username": "invalid_user",
+        "invalid_password": "wrong_password"
+    },
+    "url": {
+        "base_url": "https://www.saucedemo.com/",
+        "products_url": "https://www.saucedemo.com/inventory.html",
+        "cart_url": "https://www.saucedemo.com/cart.html"
+    },
+    "products": {
+        "bag_pack": {
+            "name": "Sauce Labs Backpack",
+            "price": "$29.99",
+            "description": "A red backpack with a logo."
+        },
+        "bike_light": {
+            "name": "Sauce Labs Bike Light",
+            "price": "$9.99",
+            "description": "A bike light with a logo."
+        },
+        "bolt_tshirt": {
+            "name": "Sauce Labs Bolt T-Shirt",
+            "price": "$15.99",
+            "description": "A t-shirt with a logo."
+        }
+    },
+    "cart": {
+        "empty_cart_message": "Your cart is empty",
+        "checkout_button": "Checkout",
+        "continue_shopping_button": "Continue Shopping"
+    },
+    "checkout": {
+        "first_name": "John",
+        "last_name": "Doe",
+        "postal_code": "12345",
+        "error_message": "Error: First Name is required",
+        "success_message": "Thank you for your order!"
+    },
+    "error_messages": {
+        "invalid_credentials": "Epic sadface: Username and password do not match any user in this service",
+        "invalid_password": "Epic sadface: Username and password do not match any user in this service",
+        "locked_out_user": "Epic sadface: Sorry, this user has been locked out."
+    },
+    "login": {
+        "login_button": "Login",
+        "error_message": "Epic sadface: Username and password do not match any user in this service",
+        "locked_out_error_message": "Epic sadface: Sorry, this user has been locked out."
+    }
+
+}

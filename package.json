@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "@playwright/test": "^1.51.1"
+  },
+  "scripts": {
+  "pw": "node pw.js"
+}
+
+}
