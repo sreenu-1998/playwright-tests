@@ -21,14 +21,14 @@ test.describe('Swag Labs Login Tests', () => {
 
     test.afterEach(async ({ }, testInfo) => {
         if (testInfo.status !== testInfo.expectedStatus) {
-            loggerInstance.error(`❌ Test failed: ${testInfo.title}`, testInfo.title);
-            loggerInstance.error(`Error: ${testInfo.error?.message}`, testInfo.title);
+            loggerInstance.error(testInfo.title, `❌ Test failed: ${testInfo.title}` );
+            loggerInstance.error( testInfo.title, `Error: ${testInfo.error?.message}`);
         } else {
-            loggerInstance.info('✅ Test passed successfully.', testInfo.title);
+            loggerInstance.info(testInfo.title,'✅ Test passed successfully.' );
         }
 
         if (testInfo.error?.stack) {
-            loggerInstance.error(`Stack trace:\n${testInfo.error.stack}`, testInfo.title);
+            loggerInstance.error(testInfo.title, `Stack trace:\n${testInfo.error.stack}` );
         }
 
 

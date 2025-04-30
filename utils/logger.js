@@ -20,19 +20,19 @@ class Logger {
   }
 
   info(message, testTitle = '') {
-    this._write('INFO', message, testTitle);
+    this._write('INFO',testTitle, message );
   }
 
   warn(message, testTitle = '') {
-    this._write('WARN', message, testTitle);
+    this._write('WARN',testTitle, message);
   }
 
   error(message, testTitle = '') {
-    this._write('ERROR', message, testTitle);
+    this._write('ERROR',testTitle, message);
   }
 
   logTestEnd(testTitle = '') {
-    this.info('--- Test Ended ---', testTitle);
+    this.info(testTitle,'--- Test Ended ---');
   }
 }
 

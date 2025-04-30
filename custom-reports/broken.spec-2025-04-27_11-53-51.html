@@ -1,0 +1,215 @@
+
+      <!DOCTYPE html>
+      <html>
+      <head>
+        <meta charset="UTF-8" />
+        <title>Playwright Test Report</title>
+        <style>
+          body {
+            font-family: 'Segoe UI', sans-serif;
+            background: #f8f9fa;
+            padding: 20px;
+            color: #333;
+          }
+          h1 {
+            color: #222;
+          }
+          .summary {
+            display: flex;
+            gap: 20px;
+            background: #fff;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+          }
+          .summary span {
+            font-weight: bold;
+            padding: 8px 14px;
+            border-radius: 5px;
+            font-size: 14px;
+          }
+          .total { background: #e0e0e0; }
+          .passed { background: #d4edda; color: #155724; }
+          .failed { background: #f8d7da; color: #721c24; }
+          .duration { background: #fff3cd; color: #856404; }
+
+          .section-title {
+            font-size: 18px;
+            margin-top: 30px;
+            margin-bottom: 10px;
+            color: #444;
+            border-bottom: 2px solid #ccc;
+            padding-bottom: 5px;
+          }
+          .log-content {
+            background: #f5f5f5;
+            border: 1px solid #ccc;
+            padding: 10px;
+            white-space: pre-wrap;
+            font-family: monospace;
+            max-height: 500px;
+            overflow-y: auto;
+          }
+
+          table {
+            border-collapse: collapse;
+            width: 100%;
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+          }
+          th, td {
+            padding: 10px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+          }
+          .tag {
+            background: #e0e0e0;
+            padding: 2px 8px;
+            border-radius: 5px;
+            font-size: 12px;
+          }
+          .badge {
+            font-size: 12px;
+            padding: 5px 10px;
+            border-radius: 20px;
+          }
+          .passed { background: #28a745; color: white; }
+          .failed { background: #dc3545; color: white; }
+          .duration { background: #ffc107; }
+        </style>
+      </head>
+      <body>
+        <h1>Playwright Test Report</h1>
+        <div class="summary">
+          <span class="total">Total: 4</span>
+          <span class="passed">Passed: 4</span>
+          <span class="failed">Failed: 0</span>
+          <span class="duration">Total Duration: 17986ms</span>
+        </div>
+        
+        <div class="section-title">Passed Tests</div>
+        <table>
+          <thead>
+            <tr>
+              <th>Title</th>
+              <th>File</th>
+              <th>Status</th>
+              <th>Duration</th>
+              <th>Screenshots</th>
+              <th>Videos</th>
+            </tr>
+          </thead>
+          <tbody>
+            
+          <tr class="passed">
+            <td>
+              
+                print no of links in inventory page 
+              
+            </td>
+            <td>C:\Users\Srinivas Reddy\playwright-tests\tests\broken.spec.js</td>
+            <td><span class="badge passed">PASSED</span></td>
+            <td>2336ms</td>
+            <td>—</td>
+            <td>—</td>
+          </tr>
+        
+          <tr class="passed">
+            <td>
+              
+                print no of Broken links in inventory page 
+              
+            </td>
+            <td>C:\Users\Srinivas Reddy\playwright-tests\tests\broken.spec.js</td>
+            <td><span class="badge passed">PASSED</span></td>
+            <td>7263ms</td>
+            <td>—</td>
+            <td>—</td>
+          </tr>
+        
+          <tr class="passed">
+            <td>
+              
+                print all links 
+              
+            </td>
+            <td>C:\Users\Srinivas Reddy\playwright-tests\tests\broken.spec.js</td>
+            <td><span class="badge passed">PASSED</span></td>
+            <td>795ms</td>
+            <td>—</td>
+            <td>—</td>
+          </tr>
+        
+          <tr class="passed">
+            <td>
+              
+                print all broken links 
+              
+            </td>
+            <td>C:\Users\Srinivas Reddy\playwright-tests\tests\broken.spec.js</td>
+            <td><span class="badge passed">PASSED</span></td>
+            <td>7592ms</td>
+            <td>—</td>
+            <td>—</td>
+          </tr>
+        
+          </tbody>
+        </table>
+
+        <div class="section-title">Failed Tests</div>
+        <table>
+          <thead>
+            <tr>
+              <th>Title</th>
+              <th>File</th>
+              <th>Status</th>
+              <th>Duration</th>
+              <th>Screenshots</th>
+              <th>Videos</th>
+            </tr>
+          </thead>
+          <tbody>
+            
+          </tbody>
+        </table>
+
+        <div class="section-title">Logs</div>
+        <div class="log-content">[2025-04-27T11:53:31.210Z] [INFO] [print no of links in inventory page] --- Test Started ---
+[2025-04-27T11:53:31.210Z] [INFO] [print no of links in inventory page] Navigating to login page...
+[2025-04-27T11:53:31.725Z] [INFO] [print no of links in inventory page] Filling in username: "standard_user"
+[2025-04-27T11:53:31.763Z] [INFO] [print no of links in inventory page] Filling in password
+[2025-04-27T11:53:31.775Z] [INFO] [print no of links in inventory page] Clicking login button
+[2025-04-27T11:53:33.351Z] [INFO] [print no of links in inventory page] Total number of links in the page are 20
+[2025-04-27T11:53:33.355Z] [INFO] [print no of links in inventory page] ✅ Test passed successfully.
+[2025-04-27T11:53:33.356Z] [INFO] [print no of links in inventory page] --- Test Ended ---
+[2025-04-27T11:53:33.539Z] [INFO] [print no of Broken links in inventory page] --- Test Started ---
+[2025-04-27T11:53:33.540Z] [INFO] [print no of Broken links in inventory page] Navigating to login page...
+[2025-04-27T11:53:33.864Z] [INFO] [print no of Broken links in inventory page] Filling in username: "standard_user"
+[2025-04-27T11:53:33.905Z] [INFO] [print no of Broken links in inventory page] Filling in password
+[2025-04-27T11:53:33.924Z] [INFO] [print no of Broken links in inventory page] Clicking login button
+[2025-04-27T11:53:39.643Z] [INFO] [print no of Broken links in inventory page] Total number of links in the page are 17
+[2025-04-27T11:53:39.645Z] [INFO] [print no of Broken links in inventory page] ✅ Test passed successfully.
+[2025-04-27T11:53:39.646Z] [INFO] [print no of Broken links in inventory page] --- Test Ended ---
+[2025-04-27T11:53:40.833Z] [INFO] [print all links] --- Test Started ---
+[2025-04-27T11:53:40.833Z] [INFO] [print all links] Navigating to login page...
+[2025-04-27T11:53:41.231Z] [INFO] [print all links] Filling in username: "standard_user"
+[2025-04-27T11:53:41.272Z] [INFO] [print all links] Filling in password
+[2025-04-27T11:53:41.290Z] [INFO] [print all links] Clicking login button
+[2025-04-27T11:53:41.443Z] [INFO] [print all links] All Links: #,https://saucelabs.com/,#,#,,#,#,#,#,#,#,#,#,#,#,#,#,https://twitter.com/saucelabs,https://www.facebook.com/saucelabs,https://www.linkedin.com/company/sauce-labs/
+[2025-04-27T11:53:41.444Z] [INFO] [print all links] ✅ Test passed successfully.
+[2025-04-27T11:53:41.444Z] [INFO] [print all links] --- Test Ended ---
+[2025-04-27T11:53:41.606Z] [INFO] [print all broken links] --- Test Started ---
+[2025-04-27T11:53:41.607Z] [INFO] [print all broken links] Navigating to login page...
+[2025-04-27T11:53:42.042Z] [INFO] [print all broken links] Filling in username: "standard_user"
+[2025-04-27T11:53:42.076Z] [INFO] [print all broken links] Filling in password
+[2025-04-27T11:53:42.095Z] [INFO] [print all broken links] Clicking login button
+[2025-04-27T11:53:47.681Z] [INFO] [print all broken links] All Broken Links: #,#,#,,#,#,#,#,#,#,#,#,#,#,#,#,https://www.linkedin.com/company/sauce-labs/
+[2025-04-27T11:53:47.684Z] [INFO] [print all broken links] ✅ Test passed successfully.
+[2025-04-27T11:53:47.685Z] [INFO] [print all broken links] --- Test Ended ---
+</div>
+      </body>
+      </html>
+    

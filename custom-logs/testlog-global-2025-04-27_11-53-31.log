@@ -1,0 +1,32 @@
+[2025-04-27T11:53:31.210Z] [INFO] [print no of links in inventory page] --- Test Started ---
+[2025-04-27T11:53:31.210Z] [INFO] [print no of links in inventory page] Navigating to login page...
+[2025-04-27T11:53:31.725Z] [INFO] [print no of links in inventory page] Filling in username: "standard_user"
+[2025-04-27T11:53:31.763Z] [INFO] [print no of links in inventory page] Filling in password
+[2025-04-27T11:53:31.775Z] [INFO] [print no of links in inventory page] Clicking login button
+[2025-04-27T11:53:33.351Z] [INFO] [print no of links in inventory page] Total number of links in the page are 20
+[2025-04-27T11:53:33.355Z] [INFO] [print no of links in inventory page] ✅ Test passed successfully.
+[2025-04-27T11:53:33.356Z] [INFO] [print no of links in inventory page] --- Test Ended ---
+[2025-04-27T11:53:33.539Z] [INFO] [print no of Broken links in inventory page] --- Test Started ---
+[2025-04-27T11:53:33.540Z] [INFO] [print no of Broken links in inventory page] Navigating to login page...
+[2025-04-27T11:53:33.864Z] [INFO] [print no of Broken links in inventory page] Filling in username: "standard_user"
+[2025-04-27T11:53:33.905Z] [INFO] [print no of Broken links in inventory page] Filling in password
+[2025-04-27T11:53:33.924Z] [INFO] [print no of Broken links in inventory page] Clicking login button
+[2025-04-27T11:53:39.643Z] [INFO] [print no of Broken links in inventory page] Total number of links in the page are 17
+[2025-04-27T11:53:39.645Z] [INFO] [print no of Broken links in inventory page] ✅ Test passed successfully.
+[2025-04-27T11:53:39.646Z] [INFO] [print no of Broken links in inventory page] --- Test Ended ---
+[2025-04-27T11:53:40.833Z] [INFO] [print all links] --- Test Started ---
+[2025-04-27T11:53:40.833Z] [INFO] [print all links] Navigating to login page...
+[2025-04-27T11:53:41.231Z] [INFO] [print all links] Filling in username: "standard_user"
+[2025-04-27T11:53:41.272Z] [INFO] [print all links] Filling in password
+[2025-04-27T11:53:41.290Z] [INFO] [print all links] Clicking login button
+[2025-04-27T11:53:41.443Z] [INFO] [print all links] All Links: #,https://saucelabs.com/,#,#,,#,#,#,#,#,#,#,#,#,#,#,#,https://twitter.com/saucelabs,https://www.facebook.com/saucelabs,https://www.linkedin.com/company/sauce-labs/
+[2025-04-27T11:53:41.444Z] [INFO] [print all links] ✅ Test passed successfully.
+[2025-04-27T11:53:41.444Z] [INFO] [print all links] --- Test Ended ---
+[2025-04-27T11:53:41.606Z] [INFO] [print all broken links] --- Test Started ---
+[2025-04-27T11:53:41.607Z] [INFO] [print all broken links] Navigating to login page...
+[2025-04-27T11:53:42.042Z] [INFO] [print all broken links] Filling in username: "standard_user"
+[2025-04-27T11:53:42.076Z] [INFO] [print all broken links] Filling in password
+[2025-04-27T11:53:42.095Z] [INFO] [print all broken links] Clicking login button
+[2025-04-27T11:53:47.681Z] [INFO] [print all broken links] All Broken Links: #,#,#,,#,#,#,#,#,#,#,#,#,#,#,#,https://www.linkedin.com/company/sauce-labs/
+[2025-04-27T11:53:47.684Z] [INFO] [print all broken links] ✅ Test passed successfully.
+[2025-04-27T11:53:47.685Z] [INFO] [print all broken links] --- Test Ended ---

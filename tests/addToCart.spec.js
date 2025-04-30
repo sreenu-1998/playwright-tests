@@ -19,10 +19,20 @@ test.describe('Swag Labs Add to Cart Tests', () => {
     await loginPage.navigateToLoginPage();
   });
 
-  test.afterEach(async ({}, testInfo) => {
-    const status = testInfo.status.toUpperCase();
-    loggerInstance.info(testInfo.title, `✅ Test ${status}`);
-    loggerInstance.logTestEnd(); // ✅ Proper instance method call
+  test.afterEach(async ({ }, testInfo) => {
+    if (testInfo.status !== testInfo.expectedStatus) {
+      loggerInstance.error(testInfo.title, `❌ Test failed: ${testInfo.title}`);
+      loggerInstance.error(testInfo.title, `Error: ${testInfo.error?.message}`);
+    } else {
+      loggerInstance.info(testInfo.title, '✅ Test passed successfully.');
+    }
+
+    if (testInfo.error?.stack) {
+      loggerInstance.error(testInfo.title, `Stack trace:\n${testInfo.error.stack}`);
+    }
+
+
+    loggerInstance.logTestEnd(testInfo.title);
   });
 
   test('Add item to cart and verify @regression', async () => {
